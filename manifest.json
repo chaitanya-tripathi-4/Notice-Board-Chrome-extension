@@ -1,0 +1,16 @@
+{
+    "manifest_version": 3,
+    "name": "Digital Notice Board",
+    "version": "1.0",
+    "description": "A Chrome extension for a digital notice board with various widgets.",
+    "permissions": ["storage"],
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": "128x128-px-google-plu-115455139185m7bp0sxz3.png"
+    },
+    "chrome_url_overrides": {
+      "newtab": "popup.html"
+    },
+    "options_page": "settings.html"
+  }
+  

@@ -1,0 +1,146 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #e3f2fd; /* Light blue background for the page */
+  }
+  
+  #widget-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    width: 90%;
+    margin: 20px auto;
+  }
+  
+  .widget {
+    background: #ffffff; /* White background for widgets */
+    border: 1px solid #90caf9; /* Light blue border */
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    box-sizing: border-box;
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .widget:hover {
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  h2 {
+    margin-top: 0;
+    font-size: 1.5em;
+    color: #0d47a1; /* Dark blue color for headings */
+  }
+  
+  button {
+    background-color: #64b5f6; /* Light blue button */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #42a5f5; /* Slightly darker blue on hover */
+  }
+  
+  #timer {
+    font-size: 1.5em;
+    text-align: center;
+    margin: 10px 0;
+  }
+  
+  #issue-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #issue-form label {
+    margin-top: 10px;
+  }
+  
+  #issue-form input, #issue-form textarea {
+    margin-top: 5px;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #90caf9; /* Light blue border */
+  }
+  
+  #issue-form button {
+    margin-top: 10px;
+  }
+  
+  .opportunity {
+    margin-bottom: 10px;
+  }
+  
+  .opportunity strong {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .announcement {
+    margin: 10px 0;
+  }
+  
+  .topic {
+    margin-bottom: 15px;
+  }
+  
+  marquee {
+    font-size: 1.1em;
+    color: #0d47a1; /* Dark blue color for marquee text */
+  }
+  
+  iframe {
+    border-radius: 4px;
+    border: 1px solid #90caf9; /* Light blue border for iframes */
+  }
+  
+  #google-slides-widget {
+    grid-column: span 2; /* Make the Google Slides widget take up more space */
+    width: 100%; /* Ensure the widget container stretches */
+  }
+  
+  #google-slides-widget iframe {
+    width: 100%;
+    height: 500px; /* Increase the height to give more space for slides */
+  }
+  
+  #announcements-and-pomodoro {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Space between the two widgets */
+  }
+  
+  #announcements-widget {
+    height: 100px; /* Decrease the height */
+  }
+  
+  #pomodoro-widget {
+    height: 150px; /* Decrease the height */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  #announcements-widget marquee {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    display: block; /* Ensure it occupies a single line */
+  }
+  
+  #announcements-and-pomodoro-container {
+    grid-column: span 2; /* Take up the full width of the grid */
+    display: flex;
+    flex-direction: column;
+  }
+  
